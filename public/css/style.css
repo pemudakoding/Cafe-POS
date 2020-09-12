@@ -1,0 +1,162 @@
+:root {
+    --white-default-color: #f4fbff;
+    --blue-color: #428dff;
+    --red-color: #ff9797;
+    --red-dark-color: #ff7878;
+    --gray-color: #c5c5c5;
+    --green-color: #97ff9b;
+    --green-dark-color: #68e36d;
+    --silver-color: #f5f5f5;
+    --blue-dark-color: #3781f2;
+}
+
+body {
+    background-color: var(--white-default-color);
+}
+
+.bg-blue {
+    height: 140px;
+    background-color: var(--blue-color);
+}
+.bg-gray {
+    background-color: var(--silver-color);
+}
+
+.pt-110 {
+    padding-top: 100px;
+}
+
+.border-primary {
+    border-color: var(--blue-color);
+}
+.border-lg {
+    border: 5px solid;
+}
+
+.btn-danger {
+    background-color: var(--red-color);
+    border: 0;
+}
+.btn-danger:hover {
+    background-color: var(--red-dark-color);
+}
+
+.text-primary {
+    color: var(--blue-color);
+}
+.btn-primary {
+    background-color: var(--blue-color);
+    border: 0;
+}
+.btn-primary:hover {
+    background-color: var(--blue-dark-color);
+}
+.shadow {
+    box-shadow: 0px 4px 25px -7px #428dff;
+}
+.shadow-blue {
+    box-shadow: 0px 4px 25px -10px var(--blue-color);
+}
+
+.text-gray {
+    color: var(--gray-color);
+}
+
+.rounded-lg {
+    border-radius: 10px !important;
+}
+
+.btn-success {
+    background-color: var(--green-color);
+    border: 0;
+}
+.btn-success:hover {
+    background-color: var(--green-dark-color);
+    border: 0;
+}
+.btn-success:focus {
+    background-color: var(--green-dark-color);
+}
+.form-control:focus {
+    background-color: var(--silver-color);
+}
+.box-menu {
+    height: 100px;
+}
+
+.order {
+    bottom: -80px;
+    transition: all 0.2s linear;
+}
+
+.box-menu:hover > .order {
+    bottom: 0;
+}
+.order input {
+    width: 100%;
+}
+
+.bg-blue-transparent {
+    background-color: rgba(66, 141, 255, 0.69);
+}
+
+.bg-primary {
+    background-color: var(--blue-color) !important;
+}
+
+.bottom-70 {
+    bottom: -50px;
+}
+
+.nav a {
+    display: block;
+}
+.nav a:hover {
+    background-color: var(--blue-dark-color);
+}
+
+@media print {
+    .printPage {
+        padding-bottom: 1000px;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 18px;
+        z-index: 9999;
+    }
+}
+
+.bg-danger {
+    background-color: var(--red-color) !important;
+}
+.btn-trash {
+    right: 0px;
+    top: 25px;
+    z-index: 999;
+    border: 5px solid white;
+    opacity: 0;
+    transition: 0.2s all ease-in;
+}
+.btn-trash-open {
+    opacity: 1;
+}
+.btn-trash:hover {
+    border: 5px solid white;
+}
+
+.menus-container {
+    height: 510px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.menus-create {
+    display: none;
+}
+.active-create {
+    display: flex;
+}
