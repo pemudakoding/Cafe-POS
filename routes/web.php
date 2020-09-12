@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('', function () {
+    return redirect()->route('auth.index');
+});
 Route::post('cashier/status', 'TransactionController@setStatus')->middleware('can:kasir')->name('cashier.status');
 Route::resource('cashier', 'TransactionController')->middleware('can:kasir');
 
